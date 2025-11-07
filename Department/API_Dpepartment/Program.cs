@@ -50,7 +50,11 @@ builder.Services.AddAuthentication(options =>
         ClockSkew = TimeSpan.FromSeconds(30)
     };
 });
-
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetConnectionString("Redis");
+    options.InstanceName = "DeptApp_";
+});
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsList", policy =>

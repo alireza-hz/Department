@@ -1,0 +1,54 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.ide
+*.psess
+*.vsp
+*.vspscc
+
+# Build Folders
+bin/
+obj/
+out/
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# DotNet
+*.dll
+*.pdb
+*.exe
+*.app
+*.apk
+*.xap
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Entity Framework
+*.edmx.diagram
+*.dbmdl
+
+# User-specific files
+*.userprefs
